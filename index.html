@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download the Hero Siege trainer loader and prepare a device license request.">
+  <meta name="referrer" content="no-referrer">
+  <title>hs2trainer — Hero Siege trainer</title>
+  <link rel="canonical" href="https://hs2trainer.github.io/">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="request.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="https://hs2trainer.github.io/" aria-label="hs2trainer home"><img src="logo.png" width="320" height="206" alt="Hero Siege"></a>
+    <a class="header-link" href="#request">Request a license <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">HS2TRAINER <span>FOR WINDOWS</span></p>
+      <h1 id="title">Ready when you are.</h1>
+      <p class="intro-text">Get the loader, request your device license, and import it to get started.</p>
+    </section>
+    <div class="panels">
+      <section class="download-panel" aria-labelledby="download-title">
+        <p class="eyebrow">01 <span>GET THE LOADER</span></p>
+        <h2 id="download-title">One download.<br>Your next session.</h2>
+        <p>The loader handles your license, setup, and trainer updates.</p>
+        <a class="button primary download" href="https://github.com/capaxed/hero-siege-trainer-releases/releases/latest/download/hs2trainer.exe">Download loader <span aria-hidden="true">↓</span></a>
+        <p class="download-detail">hs2trainer.exe · Windows</p>
+        <ol class="steps">
+          <li><span>1</span><div><strong>Open the loader</strong><p>Choose Request license to open this page with your device code.</p></div></li>
+          <li><span>2</span><div><strong>Request your license</strong><p>Send your device code and reply email using this form.</p></div></li>
+          <li><span>3</span><div><strong>Import your license</strong><p>Save the license file from the reply and import it in the loader.</p></div></li>
+        </ol>
+      </section>
+      <section class="request-panel" id="request" aria-labelledby="request-title">
+        <p class="eyebrow">02 <span>REQUEST ACCESS</span></p>
+        <h2 id="request-title">A license for your device.</h2>
+        <p>Use the complete device code shown by your loader. Your license file will arrive by email.</p>
+        <form id="request-form">
+          <label for="device">Device code <span class="required">Required</span></label>
+          <textarea id="device" name="device" rows="2" maxlength="100" required autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="HS1-…" aria-describedby="device-hint"></textarea>
+          <p class="hint" id="device-hint">Starts with HS1- followed by 64 letters and numbers.</p>
+          <div class="field-row">
+            <div><label for="tier">Tier</label><select id="tier" name="tier"><option value="lite">Lite</option><option value="full">Full</option><option value="eac">EAC · launch only</option></select></div>
+            <div><label for="name">Your name <span class="optional">Optional</span></label><input id="name" name="name" type="text" maxlength="80" autocomplete="name" placeholder="Name or nickname"></div>
+          </div>
+          <label for="email">Reply email <span class="required">Required</span></label>
+          <input id="email" name="email" type="email" maxlength="254" required autocomplete="email" placeholder="you@example.com">
+          <button class="button primary" id="send-request" type="submit" disabled>Send request <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <p class="privacy">Your email is used to reply with your license. Your device code identifies this installation without sharing raw hardware details or passwords. Your request is sent only when you choose Send request.</p>
+        <noscript><p class="status error">Enable JavaScript to send your license request.</p></noscript>
+      </section>
+    </div>
+  </main>
+  <footer><span>HS2TRAINER</span><span>Keep your license file for future installs on this device.</span></footer>
+</body>
+</html>
